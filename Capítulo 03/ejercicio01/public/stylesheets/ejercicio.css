@@ -1,0 +1,53 @@
+/*
+  Agregue las propiedades al selector article
+  para: 
+    - Se muestre en rejilla
+    - La plantilla de columnas es 25% y 75%
+*/
+
+/* Inicio */
+
+article {
+
+}
+
+/* Fin */
+
+
+/*
+  Agregue las propiedades al selector div.respuesta article 
+  para: 
+    - Se muestre en rejilla
+    - La plantilla de columnas es 100%
+*/
+
+/* Inicio */
+
+@media screen and (max-width: 640px) {
+
+  div.respuesta article {
+
+  }
+
+}
+
+/* Fin */
+
+/*
+  Agregue las propiedades al selector div.right img 
+  para: 
+    - no se muestran las imágenes
+*/
+
+/* Inicio */
+
+@media screen and (max-width: 640px) {
+
+  div.right img {
+    
+  }
+
+}
+
+/* Fin */
+

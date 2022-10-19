@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <h1>
+        <%= title %>
+    </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Modelo</th>
+                <th># Puertas</th>
+                <th>Fecha de Compra</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% arrAutos.forEach(function(autos){ %>
+                <tr>
+                    <td>
+                        <%= autos.id %>
+                    </td>
+                    <td>
+                        <%= autos.modelo %>
+                    </td>
+                    <td>
+                        <%= autos.puertas %>
+                    </td>
+                    <td>
+                        <%= autos.fechaDeCompra %>
+                    </td>
+                </tr>
+                <% }); %>
+        </tbody>
+    </table>
+</body>
+
+</html>

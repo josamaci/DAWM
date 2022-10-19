@@ -1,0 +1,104 @@
+/*
+
+Realice una petición al URL Recetas. (o puede utilizar el siguiente archivo) cuya respuesta está en formato JSON.
+Considere las marcas en color rojo (que se encuentran cerca del texto, en el diseño) como referencia para utilizar los valores a las claves en el objeto JSON como texto dentro del HTML.  No debe incluir las marcas en la página HTML.
+Interacción
+
+Al inicio, solo debe mostrar los valores relacionados con la primera receta que aparece en el JSON excepto los valores en Cuisine y/o Diet que se encuentran debajo. 
+Al dar clic en Cuisine y/o Diet de la receta inicial, debe mostrar las recetas relacionada con el texto. Es decir, si:
+La receta original tiene en Diet el texto "Vegetarian",
+El  usuario da clic en el texto, 
+Debe mostrar los nombres de las recetas cuyo valor en Diet es "Vegetarian" en la esquina inferior izquierda.
+Considere la misma interacción con el valor en Cuisine de la receta inicial. En este caso debe mostrar los resultados en la esquina inferior derecha*/
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+h1 a {
+    color: #339900;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    color: #339900;
+    text-decoration: underline;
+}
+
+h2#titulos {
+    font-family: 'Mulish', sans-serif;
+}
+
+nav,
+.tiempos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tiempop,
+.tiempoc,
+.tiempot {
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-top: 0.25%;
+}
+
+.tiempop p,
+.tiempoc p,
+.tiempot p {
+    font-size: 2rem;
+    align-self: center;
+}
+
+.instruccionestext {
+    text-align: justify;
+}
+
+.options a {
+    color: black;
+    text-decoration: none;
+}
+
+.options p {
+    text-align: right;
+}
+
+.content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "Ingredientes Instrucciones" "Vegetarian Fusion";
+    column-gap: 2em;
+    row-gap: 1em;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.Vegetarian,
+.Fusion {
+    border-bottom: 0.1em solid lightslategrey;
+}
+
+.ingredientestext,
+.instruccionestext {
+    border: 0.1em solid black;
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 1116px) {
+    .content {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "Ingredientes" "Instrucciones" "Vegetarian" "Fusion";
+        column-gap: 0em;
+        row-gap: 0.1em;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .tiempos {
+        display: none
+    }
+    .nav {
+        flex-direction: row-reverse;
+    }
+}

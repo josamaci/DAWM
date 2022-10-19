@@ -1,0 +1,33 @@
+{
+    "config": {
+        "locale": "en"
+    },
+    "model": {
+        "type": "Object",
+        "value": {
+            "modelo": {
+                "type": "randomElementInArray",
+                "value": ["Abarth 595", "Audi A1", "Bugatti Chiron", "Chevrolet Aveo"]
+            },
+            "fechaDeCompra": {
+                "type": "faker",
+                "value": "date.between",
+                "options": ["2000-01-02", "2022-12-29"]
+            },
+            "puertas": {
+                "type": "randomNumberBetween",
+                "value": [2, 6]
+            },
+            "createdAt": {
+                "type": "faker",
+                "value": "date.between",
+                "options": ["2000-01-02", "2022-12-29"]
+            },
+            "updatedAt": {
+                "type": "faker",
+                "value": "date.between",
+                "options": ["2000-01-02", "2022-12-29"]
+            }
+        }
+    }
+}
