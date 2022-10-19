@@ -1,0 +1,45 @@
+{
+    "config": {
+        "locale": "en"
+    },
+    "model": {
+        "type": "Object",
+        "value": {
+            "ID_USUARIO": {
+                "type": "incrementNumber",
+                "options": {
+                    "from": 101
+                }
+            },
+            "NOMBRE": {
+                "type": "faker",
+                "value": "name.firstName"
+            },
+            "APELLIDO": {
+                "type": "faker",
+                "value": "name.firstName"
+            },
+            "CORREO": {
+                "type": "Literal",
+                "value": "Correo@example.com"
+            },
+            "CONTRASENIA": {
+                "type": "faker",
+                "value": "random.words"
+            },
+            "FECHANAC": {
+                "type": "faker",
+                "value": "date.between",
+                "options": ["2000-01-02", "2002-12-29"]
+            },
+            "TELEFONO": {
+                "type": "randomNumberBetween",
+                "value": [1000000000, 9999999999]
+            },
+            "SEXO": {
+                "type": "Literal",
+                "value": "Masculino"
+            }
+        }
+    }
+}

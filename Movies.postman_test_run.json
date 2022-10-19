@@ -1,0 +1,215 @@
+{
+	"id": "40526354-43d8-4e24-a2d6-9d0f8174c01b",
+	"name": "Movies",
+	"timestamp": "2022-08-22T16:48:35.076Z",
+	"collection_id": "22951184-c80b2dda-ae27-4d84-b621-dd1ff5e31067",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 12,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "04534cf9-762c-492b-a415-72e63f2f8d50",
+			"name": "GET-all",
+			"url": "https://c5e4-5d76c-default-rtdb.firebaseio.com/movies.json",
+			"time": 663,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response is ok": true,
+				"Number of mvoies returned = 579": true
+			},
+			"testPassFailCounts": {
+				"Response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Number of mvoies returned = 579": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				663
+			],
+			"allTests": [
+				{
+					"Response is ok": true,
+					"Number of mvoies returned = 579": true
+				}
+			]
+		},
+		{
+			"id": "ffa3c1ca-8bbb-4935-91a8-a0e5c2fea6d7",
+			"name": "GET-one",
+			"url": "https://c5e4-5d76c-default-rtdb.firebaseio.com/movies/150.json",
+			"time": 114,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response is ok": true,
+				"Has data: mpaa_rating": true,
+				"Has total_gross value: \"12349549\"": true
+			},
+			"testPassFailCounts": {
+				"Response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has data: mpaa_rating": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has total_gross value: \"12349549\"": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				114
+			],
+			"allTests": [
+				{
+					"Response is ok": true,
+					"Has data: mpaa_rating": true,
+					"Has total_gross value: \"12349549\"": true
+				}
+			]
+		},
+		{
+			"id": "b42fcff4-12b6-4897-a75e-7e1404d484f5",
+			"name": "POST",
+			"url": "https://c5e4-5d76c-default-rtdb.firebaseio.com/movies/579.json",
+			"time": 116,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response is ok": true,
+				"Has data: name": true
+			},
+			"testPassFailCounts": {
+				"Response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has data: name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				116
+			],
+			"allTests": [
+				{
+					"Response is ok": true,
+					"Has data: name": true
+				}
+			]
+		},
+		{
+			"id": "3e3ea739-68b3-49e8-9545-bffc2d484acb",
+			"name": "PUT",
+			"url": "https://c5e4-5d76c-default-rtdb.firebaseio.com/movies/579.json",
+			"time": 122,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response is ok": true,
+				"Has data: total_gross": true,
+				"Has data: inflation_adjusted_gross": true
+			},
+			"testPassFailCounts": {
+				"Response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has data: total_gross": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has data: inflation_adjusted_gross": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				122
+			],
+			"allTests": [
+				{
+					"Response is ok": true,
+					"Has data: total_gross": true,
+					"Has data: inflation_adjusted_gross": true
+				}
+			]
+		},
+		{
+			"id": "8a2395e5-2a06-4320-bc18-ff876130c251",
+			"name": "DELETE",
+			"url": "https://c5e4-5d76c-default-rtdb.firebaseio.com/movies/579.json",
+			"time": 120,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response is ok": true,
+				"Response is null": true
+			},
+			"testPassFailCounts": {
+				"Response is ok": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is null": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				120
+			],
+			"allTests": [
+				{
+					"Response is ok": true,
+					"Response is null": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1135,
+	"collection": {
+		"requests": [
+			{
+				"id": "04534cf9-762c-492b-a415-72e63f2f8d50",
+				"method": "GET"
+			},
+			{
+				"id": "ffa3c1ca-8bbb-4935-91a8-a0e5c2fea6d7",
+				"method": "GET"
+			},
+			{
+				"id": "b42fcff4-12b6-4897-a75e-7e1404d484f5",
+				"method": "POST"
+			},
+			{
+				"id": "3e3ea739-68b3-49e8-9545-bffc2d484acb",
+				"method": "PUT"
+			},
+			{
+				"id": "8a2395e5-2a06-4320-bc18-ff876130c251",
+				"method": "DELETE"
+			}
+		]
+	}
+}
